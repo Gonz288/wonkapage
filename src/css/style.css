@@ -1,0 +1,494 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Consolas, monaco, monospace;
+  background-image: linear-gradient(135deg, rgb(72, 28, 108), #5f3f85, #2F3F80, #401569, #5A4894, #A950A1, #c87cff);
+  background-size: 500%;
+  animation: fananimado 20s infinite;
+  overflow-x: hidden;
+}
+
+@keyframes fananimado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #bb00ff;
+  border-radius: 10px;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.714);
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+}
+.navbar ul li {
+  margin: 0 7px;
+}
+
+.wonkaimage {
+  width: 230px;
+  height: 90px;
+}
+
+#principal-section .skills {
+  padding: 50px 0;
+}
+#principal-section .skills .card {
+  background: rgba(0, 0, 0, 0.566);
+  backdrop-filter: blur(1px);
+  min-height: 390px;
+  max-height: 400px;
+}
+#principal-section .principal {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+#principal-section .principal .title {
+  color: #fff;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+#principal-section .principal .title span {
+  color: #bb00ff;
+}
+#principal-section .principal .card {
+  border: 1px solid #1c1c1c;
+  text-align: left;
+  padding: 50px;
+}
+#principal-section .principal .card .card-title {
+  display: inline;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  transition: 500ms;
+}
+#principal-section .principal .card .card-title:hover {
+  color: #bb00ff;
+}
+#principal-section .principal .card .card-title-color {
+  display: inline;
+  color: #bb00ff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  transition: 500ms;
+}
+#principal-section .principal .card .card-title-orange:hover {
+  color: #fff;
+}
+#principal-section .principal .card .card-text {
+  color: #fff;
+  font-size: 17px;
+}
+#principal-section .principal .card .text-1 {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+}
+#principal-section .principal img {
+  width: 14rem;
+  height: 37rem;
+  border-radius: 5%;
+  transform: perspective(800px) rotateY(-20deg);
+  transition: 0.8s;
+  z-index: 0;
+}
+#principal-section .principal img:hover {
+  transform: perspective(800px) rotateY(0deg);
+}
+
+.img-elab {
+  min-height: 370px;
+  max-height: 370px;
+  min-width: 350px;
+  max-width: 350px;
+  text-align: center;
+  padding: 5px;
+}
+
+#recetas-section .skills {
+  padding: 50px 0;
+}
+#recetas-section .skills .card {
+  background: rgba(0, 0, 0, 0.566);
+  backdrop-filter: blur(1px);
+  min-height: 390px;
+  max-height: 700px;
+}
+
+#elaboracion-section .skills {
+  padding: 50px 0;
+}
+#elaboracion-section .skills .card {
+  background: rgba(0, 0, 0, 0.566);
+  backdrop-filter: blur(1px);
+  min-height: 370px;
+  max-height: 570px;
+}
+#elaboracion-section .principal {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+#elaboracion-section .principal .title {
+  color: #fff;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+#elaboracion-section .principal .title span {
+  color: #bb00ff;
+}
+#elaboracion-section .principal .card {
+  border: 1px solid #1c1c1c;
+  text-align: left;
+  padding: 50px;
+}
+#elaboracion-section .principal .card .card-title {
+  display: inline;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  transition: 500ms;
+}
+#elaboracion-section .principal .card .card-title:hover {
+  color: #bb00ff;
+}
+#elaboracion-section .principal .card .card-title-color {
+  display: inline;
+  color: #bb00ff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  transition: 500ms;
+}
+#elaboracion-section .principal .card .card-title-orange:hover {
+  color: #fff;
+}
+#elaboracion-section .principal .card .card-text {
+  color: #fff;
+  font-size: 18px;
+}
+#elaboracion-section .principal img {
+  width: 14rem;
+  height: 28rem;
+  border-radius: 5%;
+  transform: perspective(800px) rotateY(-20deg);
+  transition: 1s;
+  z-index: 0;
+}
+#elaboracion-section .principal img:hover {
+  transform: perspective(800px) rotateY(360deg);
+}
+
+.glassmorfism {
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.187);
+  backdrop-filter: blur(3px);
+}
+
+@media screen and (max-width: 1130) {
+  .img-elab {
+    min-height: none;
+    max-height: none;
+    min-width: none;
+    max-width: none;
+    text-align: center;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #principal-section .principal .card {
+    padding: 50px 20px;
+  }
+  #principal-section .principal .card .card-text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #elaboracion-section .skills {
+    padding: 40px 140px;
+    padding-top: 40px;
+  }
+  #elaboracion-section .skills .card {
+    margin-bottom: 75px;
+    max-height: 600px;
+    text-align: center;
+    max-height: 1000px;
+  }
+  #elaboracion-section .skills .card img {
+    padding: 20px;
+  }
+  #elaboracion-section .skills .card h2 {
+    text-align: center !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  #elaboracion-section .skills {
+    padding: 40px 50px;
+    padding-top: 120px;
+  }
+  #elaboracion-section .skills .card {
+    margin-bottom: 75px;
+  }
+  #elaboracion-section .principal {
+    height: auto;
+    padding: 50px 0px 50px 0px;
+  }
+  #elaboracion-section .principal .card {
+    padding: 20px 25px;
+  }
+  #elaboracion-section .principal img {
+    width: 9rem;
+    height: 25rem;
+  }
+  #recetas-section .skills {
+    padding: 50px 0;
+  }
+  #recetas-section .skills .card {
+    background: rgba(0, 0, 0, 0.566);
+    backdrop-filter: blur(1px);
+    min-height: 390px;
+    max-height: 700px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 558px) {
+  #elaboracion-section .skills {
+    padding: 40px 0px;
+    padding-top: 120px;
+  }
+  #elaboracion-section .skills .card {
+    max-height: 100%;
+    margin-bottom: 75px;
+  }
+  #elaboracion-section .skills .card .card-body {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  #elaboracion-section .skills {
+    padding: 40px 0px;
+    padding-top: 120px;
+  }
+  #elaboracion-section .skills .card {
+    max-height: 100%;
+    margin-bottom: 75px;
+  }
+  #elaboracion-section .skills .card .card-body {
+    padding: 0;
+  }
+}
+footer {
+  color: #fff;
+  overflow: hidden;
+}
+footer .contact-form {
+  padding: 0 40px;
+}
+footer .contact-form input,
+footer .contact-form input:focus,
+footer .contact-form textarea,
+footer .contact-form textarea:focus {
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #bb00ff;
+  box-shadow: none;
+  color: #fff;
+}
+footer .contact-form label {
+  font-size: 1.05rem;
+}
+footer .contact-form button {
+  background-color: transparent;
+  border: 1px solid #bb00ff;
+  color: #fff;
+  font-weight: bold;
+  width: 200px;
+  height: 45px;
+  margin-top: 20px;
+  transition: 200ms;
+}
+footer .contact-form .btn:hover {
+  color: black;
+  background-color: #bb00ff;
+}
+footer .contact-info .div-info {
+  margin-top: 50px;
+}
+footer .contact-info .div-info .info-footer-list {
+  list-style: none;
+  color: #fff;
+}
+footer .contact-info .div-info .info-footer-list li {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 25px 0;
+  margin-left: 25px;
+}
+footer .contact-info .div-info .info-footer-list li div {
+  width: 35px;
+  height: 35px;
+  padding-top: 3px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #bb00ff;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #bb00ff;
+}
+footer .contact-info .div-redes {
+  margin-top: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .contact-info .div-redes .social a {
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 25%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+footer .contact-info .div-redes .social a:hover {
+  transform: scale(1.1);
+  color: #00fbff;
+  transition: 0.3s;
+}
+
+.footer {
+  background: rgba(0, 0, 0, 0.776);
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  padding: 15px 0;
+}
+
+.text-footer {
+  color: #fff;
+  text-align: center;
+}
+
+.copy {
+  background-color: rgb(39, 39, 39);
+}
+
+@media screen and (max-width: 1400px) {
+  footer .contact-info .div-info .info-footer-list li {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  footer .contact-form {
+    padding: 0 10px;
+  }
+  footer .contact-info {
+    padding: 0 0px;
+  }
+  footer .contact-info .div-info .info-footer-list {
+    padding-left: 25px;
+  }
+  footer .contact-info .div-info .info-footer-list li {
+    font-size: 1rem;
+    margin-left: 30px;
+  }
+  footer .contact-info .div-redes .social a {
+    width: 50px;
+    height: 50px;
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  footer {
+    padding: 65px 10px;
+  }
+}
+@media screen and (max-width: 880px) {
+  footer .contact-info .div-info .info-footer-list li {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 0px 0px;
+  }
+  footer .contact-form {
+    padding: 0 50px;
+  }
+  footer .contact-info .div-info .info-footer-list {
+    text-align: center;
+    padding-left: 25px;
+  }
+  footer .contact-info .div-info .info-footer-list li {
+    font-size: 1rem;
+  }
+  footer .contact-info .div-redes {
+    margin-top: 25px;
+  }
+  footer .contact-info .div-redes .social a {
+    width: 50px;
+    height: 50px;
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  footer {
+    padding: 0 5px;
+  }
+  footer .contact-form {
+    padding: 0 5px;
+  }
+  footer .contact-form button {
+    width: 150px;
+    height: 40px;
+  }
+  footer .contact-form label {
+    font-size: 16px;
+  }
+  footer .contact-info .div-redes {
+    margin-top: 25px;
+  }
+  footer .contact-info .div-redes .social a {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
